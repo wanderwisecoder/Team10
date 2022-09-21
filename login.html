@@ -5,8 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        body{
+            background-color: rgb(110,97,189);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+  .mainpage{
+    border:1px solid white;;
+    text-align:center;
+    width:30%;
+    margin:auto;
+    background-color:white;
+    border-radius:6px;
+    margin-top:50px;
+    height:400px;
+  }
+  input{
+    border:none;
+    border-bottom:1px solid black;
+    width:80%;
+  }
+  button{
+    margin-top:20px;
+    width:165px;
+    background-color:rgb(136,73,175);
+    border:none;
+    height:28px;
+  }
+  .others{
+    margin-top:40px;
+  }
+  .blue{
+    color:rgb(64,107,155);
+  }
+  h2{
+    margin:50px 0px;
+  }
+  .login{
+    color:white;
+    width:80%;
+  }
+  p{
+    color:rgb(205,179,163)
+  }
+  a,p{
+    font-size:10px;
+    
+  }
+  #pass{
+    margin-top:40px;
+  }
+    </style>
 </head>
 <body>
-    
+    <div class="mainpage">
+    <h2>Login</h2>
+    <div class="page">
+        <input type="email" class="text" id="email" placeholder="Email">
+        <input type="password" class="text" id="pass" placeholder="Password">
+    </div>
+   <button class="login">Login</button>
+   <div class="others">
+    <p>Forgot <a href="" target="_blank" class="blue">Password?</a></p>
+<p>Don't have an account? <a href="" target="_blank"class="blue">Sign up</a></p>
+</div>
+</div>
 </body>
 </html>
