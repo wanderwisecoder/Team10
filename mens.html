@@ -5,8 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mensPage</title>
+    <style>
+        #main{
+            
+            width: 95%;
+            height: 700px;
+            display: flex;
+            margin: auto;
+        }
+        .cls1{
+            
+            width: 45%;
+            height: 100%;
+            margin: auto;
+            justify-content: space-evenly;
+        }
+        .cl1{
+            text-decoration: line-through;
+            color: #565959;
+            font-weight: lighter;
+            font-size: 35px;
+        }
+
+        .cl2{
+            color: rgb(37,178,112);
+           font-size: 35px;
+           letter-spacing: -.2px;
+             font-weight: 500;
+             font-weight: bolder;
+            
+        }
+        h1{
+            margin-left: 10%;
+            font-size: 45px;
+        }
+        h2{
+            font-size: 40px;
+            margin-left: 10%;
+        }
+        p{
+            font-size: 35px;
+            color: rgb(124,123,124);
+            margin-left: 10%;
+        }
+        img{
+            margin:20px 0 50px 38%;
+            width: 35%;
+            height:50%
+            
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="main">
+        <div class="cls1">
+            <img src="https://m.media-amazon.com/images/I/71hx1gwSE2L._AC_UL480_FMwebp_QL65_.jpg" alt="">
+            <h2>Pause</h2>
+            <p>Mens Cotton Long Sleeves Shrug</p>
+            <h1 class="price">₹359 
+                 <span class="cl1">₹1499</span>
+                <span class="cl2">-76%</span>
+                </h1>
+            
+        </div>
+        <div class="cls1">
+            <img src="https://m.media-amazon.com/images/I/51vcLd1qgTL._AC_UL480_QL65_.jpg" alt="">
+            <h2>JUBINATION</h2>
+            <p>Men Wool Sleeveless Sweater Pack Of 1</p>
+            <h1 class="price">₹799 
+                 <span class="cl1">₹1499</span>
+                <span class="cl2">-47%</span>
+                </h1>
+        </div>
+    </div>
 </body>
 </html>
