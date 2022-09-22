@@ -5,8 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signup</title>
+    <style>
+        div{
+            width:28% ;
+            height:500Px;
+            border: 0px solid red;
+            text-align: center;
+            margin:auto;
+            background-color:#48C9B0;
+            margin-top: 50px;
+            color:white;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: normal;
+            font:"Times New Roman";
+            padding-top: 25px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .input{
+            width:80%;
+            height: 12%;
+            background-color: #F2F2F2;
+            margin-bottom: 13px;
+            border:none;
+         }
+        #name{
+            margin-top: 25px;
+        }
+        button{
+            width:80%;
+            height: 12%;
+            background-color: #17A589;
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+            border:none;
+        }
+        
+
+        
+    </style>
 </head>
 <body>
-    <h1>kanwarpal singh</h1>
-</body>
+    <div>
+        <h1>- Visitor -</h1>
+        <input type="text" class="input" id="name" placeholder="Full name">
+        <input type="email" class="input" id="email" placeholder="Email">
+        <input type="text" class="input" id="organization" placeholder="Organization">
+        <button id="button1">SIGN UP</button>
+        <button id="button2">RETURN</button>
+    </div>
+</body> 
 </html>
+<script>
+    document.querySelector("#button1").addEventListener("click",signup)
+
+    function signup(){
+        let name = document.querySelector("#name").value
+        let email = document.querySelector("#email").value
+        let org = document.querySelector("#organization").value
+        console.log(name,email,org)
+
+        localStorage.setItem("NAME",name);
+        localStorage.setItem("EMAIL",email);
+        localStorage.setItem("ORG",org);
+        
+    }
+
+    document.querySelector("#button2").addEventListener("click",returnpage)
+    
+    function  returnpage(){
+       localStorage.removeItem("NAME")
+       localStorage.removeItem("EMAIL")
+       localStorage.removeItem("ORG")
+
+        }
+</script>
